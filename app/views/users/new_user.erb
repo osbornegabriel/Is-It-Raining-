@@ -1,0 +1,21 @@
+<h3>&#x2601 Become Informed On WHETHER It's Raining &#x2601</h3>
+<p><em>See what I did there?</em></p>
+
+<form action="/users" method="post">
+  <label for="username">Rain Name:</label>
+  <input type="text" name="user[username]" placeholder="i.e. Your Username" >
+  <label for="email">Email:</label>
+  <input type="text" name="user[email]" placeholder="For A Rainy Day">
+  <p></p>
+  <label for="password">Password:</label>
+  <input type="password" name="user[password]" placeholder="Hint: try 'RAIN SHINE'">
+  <p></p>
+  <input type="submit" value="LET'S GET THIS RAINING MOVING">
+</form>
+<% if @errors %>
+  <ul class="error-list">
+  <% @errors.each do |error|%>
+    <li>&#9758<%= error%> &#128544</li>
+  <% end %>
+  </ul>
+<% end %>

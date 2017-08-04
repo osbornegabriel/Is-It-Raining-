@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Is Is Raining? &#9748</title>
+  <link rel="stylesheet" type="text/css" href="/css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="/css/application.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="/js/application.js"></script>
+</head>
+<body>
+  <h1>It's Weather Time! &#9928</h1>
+  <% if logged_in? %>
+    <p>Hey there <%= current_user.username %> |
+    <a href="/">Home</a> | <a href="/sessions/logout">Logout</a>
+  <% else %>
+    <p><a href="/users/new">Register</a> | <a href="/sessions/new">Login</a> |
+      <a href="/">Home</a>
+    </p>
+  <% end %>
+  <%= yield %>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<form action="/sessions" method="post">
+  <p><label for="username">Rain Name:</label>
+  <input type="text" name="username" size="29" placeholder="Release Your Inner Rain"></p>
+  <p><label>Password:</label>
+  <input type="password" name="password" size="30.5" placeholder="Hint: It's definitely not 'password'"></p>
+  <input type="submit" name="RAINSHINE ME">
+</form>
+<% if @errors %>
+  <ul class="error-list"><li>&#9758<%= @errors %> &#128544</li></ul>
+<% end %>
