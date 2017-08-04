@@ -1,0 +1,12 @@
+body {
+  background-color: rgba(126,192,238,.2);
+}
+
+.error-list li {
+  list-style-type: none;
+}
+
+#rainy_day {
+  float: left;
+  background-color: skyblue;
+}

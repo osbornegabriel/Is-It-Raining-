@@ -13,8 +13,8 @@ class User < ActiveRecord::Base
     self.password_hash = @password
   end
 
-  def validate_password(password)
-    self.password == password
+  def self.validate_password(user, password)
+    user && user.password == password
   end
 
 end
